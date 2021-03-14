@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>todo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="public/javascripts/script.js"></script>
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+</head>
+
+
+<!-- The Body -->
+<body>
+
+<div class="container" >
+
+    <h1  class="center_text title highlight"> My TodoList </h1>
+
+    <!-- The main container -->
+    <div id="mainContainer">
+
+        <div class="row center_text center_align_block">
+            <p  class="info_text"> The user has to type a task and then it is added to the list of ready tasks </p>
+            <!-- add show completed Button -->
+            <button id="completedBtn" class="button_wide">Completed Tasks</button>
+            <br><br>
+        </div>
+
+        <div class="row center_text" >
+            <input class="col-6 col-md-4 w-70 input" id="inputText" type="text" placeholder="Type your task here..">
+            <!-- add "Add" Button -->
+            <button  class="col small_button" id="addBtn">Add</button>
+            <br>
+            <span id="error" class="error_text"></span>
+        </div>
+
+        <div class="btn-group-vertical center_text center_align_block" id="unCompletedList" >
+
+        </div> </div>
+
+    <!-- The Secondary container -->
+    <div  id="secondaryContainer" class="center_text display_none">
+        <p  class ="info_text" > Completed Tasks:</p>
+        <div class="row center_text inline_flex" >
+            <button id="backBtn" class="button_wide">Back</button>
+        </div>
+        <p></p>
+
+        <div id="completedList" class = 'group-vertical center_text center_align_block bigger_text'> </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
+
+
